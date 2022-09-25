@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Football</title>
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -21,32 +22,25 @@
           <div class="team-text">
             <div class="flex align-items-center">
               <h2 class="team-name">Arsenal</h2>
-              <i class="star-img">
-                <svg viewBox="0 0 150 150" class="collect1">
-                  <path d="M120.99,144.34H29.01c-9.05,0-16.38-7.34-16.38-16.38V26.89c0-9.05,7.34-16.38,16.38-16.38h91.99
-                  c9.05,0,16.38,7.34,16.38,16.38v101.06C137.38,137,130.04,144.34,120.99,144.34z" class="st0"></path>
-                  <path d="M120.99,139.5H29.01c-9.05,0-16.38-7.34-16.38-16.38V22.05c0-9.05,7.34-16.38,16.38-16.38h91.99
-                  c9.05,0,16.38,7.34,16.38,16.38v101.06C137.38,132.16,130.04,139.5,120.99,139.5z" class="st1"></path>
+              <svg onclick="starEffect()" id="rating" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="16" height="16" viewBox="0 0 256 256"
+                xml:space="preserve" style="
+                  background: gray;
+                  border-radius: 5px;
+                  margin-left: 15px;
+                  margin-bottom: 8px;
+                ">
+                <defs>
+                </defs>
+                <circle id="circle-background" cx="128" cy="128" r="0" style="fill: rgb(248,188,61);"></circle>
+                <g style="stroke: none;stroke-width: 0;stroke-dasharray: none;stroke-linecap: butt;stroke-linejoin: miter;stroke-miterlimit: 10;fill: none;fill-rule: nonzero;opacity: 1;margin: 1.5px;"
+                  transform="translate(24.406593 22.406593) scale(2.3 2.3)">
                   <path
-                    d="M124.3,60.98c-0.65-2.01-2.43-3.43-4.53-3.62l-28.61-2.6L79.84,28.29c-0.83-1.94-2.73-3.2-4.84-3.2
-                  s-4.01,1.26-4.84,3.2L58.84,54.76l-28.61,2.6c-2.1,0.19-3.88,1.62-4.53,3.62c-0.65,2.01-0.05,4.21,1.54,5.6l21.62,18.96l-6.38,28.09
-                  c-0.47,2.06,0.33,4.2,2.05,5.44c0.92,0.67,2,1,3.08,1c0.94,0,1.87-0.25,2.7-0.75L75,104.57l24.67,14.74
-                  c1.8,1.08,4.08,0.99,5.79-0.25c1.71-1.24,2.52-3.37,2.05-5.44l-6.38-28.09l21.62-18.96C124.35,65.19,124.95,62.99,124.3,60.98z"
-                    class="st2"></path>
-                </svg>
-                <svg viewBox="0 0 150 150" class="collect2">
-                  <path d="M120.99,144.34H29.01c-9.05,0-16.38-7.34-16.38-16.38V26.89c0-9.05,7.34-16.38,16.38-16.38h91.99
-                  c9.05,0,16.38,7.34,16.38,16.38v101.06C137.38,137,130.04,144.34,120.99,144.34z" class="st0"></path>
-                  <path d="M120.99,139.5H29.01c-9.05,0-16.38-7.34-16.38-16.38V22.05c0-9.05,7.34-16.38,16.38-16.38h91.99
-                  c9.05,0,16.38,7.34,16.38,16.38v101.06C137.38,132.16,130.04,139.5,120.99,139.5z" class="st1"></path>
-                  <path
-                    d="M124.3,60.98c-0.65-2.01-2.43-3.43-4.53-3.62l-28.61-2.6L79.84,28.29c-0.83-1.94-2.73-3.2-4.84-3.2
-                  s-4.01,1.26-4.84,3.2L58.84,54.76l-28.61,2.6c-2.1,0.19-3.88,1.62-4.53,3.62c-0.65,2.01-0.05,4.21,1.54,5.6l21.62,18.96l-6.38,28.09
-                  c-0.47,2.06,0.33,4.2,2.05,5.44c0.92,0.67,2,1,3.08,1c0.94,0,1.87-0.25,2.7-0.75L75,104.57l24.67,14.74
-                  c1.8,1.08,4.08,0.99,5.79-0.25c1.71-1.24,2.52-3.37,2.05-5.44l-6.38-28.09l21.62-18.96C124.35,65.19,124.95,62.99,124.3,60.98z"
-                    class="st2"></path>
-                </svg>
-              </i>
+                    d="M 41.32 72.726 L 20.189 87.608 c -2.158 1.52 -5.01 -0.576 -4.205 -3.089 l 7.853 -24.508 c 0.838 -2.614 -0.088 -5.471 -2.298 -7.097 L 1.126 37.892 c -2.14 -1.575 -1.026 -4.968 1.631 -4.968 h 25.235 c 2.745 0 5.183 -1.753 6.058 -4.355 l 8.342 -24.817 c 0.84 -2.5 4.376 -2.5 5.216 0 L 55.95 28.57 c 0.875 2.602 3.313 4.355 6.058 4.355 h 25.235 c 2.657 0 3.771 3.393 1.631 4.968 L 68.461 52.914 c -2.211 1.627 -3.136 4.484 -2.298 7.097 l 7.853 24.508 c 0.805 2.513 -2.047 4.609 -4.205 3.089 L 48.68 72.726 C 46.473 71.172 43.527 71.172 41.32 72.726 z"
+                    style="stroke: none;stroke-width: 1;stroke-dasharray: none;stroke-linecap: butt;stroke-linejoin: miter;stroke-miterlimit: 10;fill: white;fill-rule: nonzero;opacity: 1;margin: 1.5px;"
+                    transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"></path>
+                </g>
+              </svg>
             </div>
             <div class="flex align-items-center">
               <img class="country-logo" src="./assets/img/england.svg" alt="england">
@@ -57,20 +51,20 @@
       </div>
       <div class="tabs">
         <div class="tabs-header">
-          <div class="active-bar">
-          </div>
-          <div class="tabs-item is-active">
-            Overview
-          </div>
-          <div class="tabs-item">
-            Schedule
-          </div>
-          <div class="tabs-item">
-            Squad
-          </div>
-          <div class="tabs-item">
-            Transfer
-          </div>
+          <ul>
+            <li onclick="openTab(event, 'overview')" class="tabs-item active">
+              <a>Overview</a>
+            </li>
+            <li onclick="openTab(event, 'schedule')" class="tabs-item">
+              <a>Schedule</a>
+            </li>
+            <li onclick="openTab(event, 'squad')" class="tabs-item">
+              <a>Squad</a>
+            </li>
+            <li onclick="openTab(event, 'transfer')" class="tabs-item">
+              <a>Transfer</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -78,17 +72,71 @@
 
     <!-- INFO CONTENT START -->
     <div class="info-content">
+      <div class="tabs-body">
+        <div id="overview" class="tab-content">
+          <div class="info-overview-wrap">
+            <div class="info-overview-left">
+              <h2 class="title">Arsenal Team</h2>
+              <div class="left-match-info">
+                <div class="time-top">
+                  <div class="time-top-left">
+                    <svg class="arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path
+                        d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                    </svg>
+                    <span class="month-btn">Previous</span>
+                  </div>
+                  <div class="time-top-center">
+                    <p>Sep 2022</p>
+                    <img class="arrow-down" src="./assets/img/chevron-down-solid.svg" alt="down">
+                  </div>
+                  <div class="time-top-right">
+                    <span class="month-btn">Next</span>
+                    <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path
+                        d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <div class="info-list">
+                    <div class="info-list-left"></div>
+                    <div class="info-list-center"></div>
+                    <div class="info-list-right"></div>
+                  </div>
+                  <div class="info-list"></div>
 
+                </div>
+              </div>
+            </div>
+            <div class="info-overview-right">
+              <img class="no-data-img" src="./assets/img/no_data.png" alt="no data">
+              <h4 class="no-data-text">No Data</h4>
+            </div>
+          </div>
+        </div>
+        <div id="schedule" class="tab-content">
+          <h3>Schedule</h3>
+          <p>This is a schedule page.</p>
+        </div>
+        <div id="squad" class="tab-content">
+          <h3>Squad</h3>
+          <p>This is a squad page.</p>
+        </div>
+        <div id="transfer" class="tab-content">
+          <h3>Transfer</h3>
+          <p>This is a transfer page.</p>
+        </div>
+      </div>
     </div>
     <!-- INFO CONTENT END -->
 
+    <!-- INNER TEMP START -->
     <div class="inner-temp-wrap">
       <div class="inner-temp">
-        <!-- <div class="tab flex"> -->
-          <div class="btn">
-            Matches Future
-          </div>
-        <!-- </div> -->
+        <div class="future-btn">
+          Matches Future
+        </div>
         <ul class="flex">
           <li>Arsenal - Tottenham Hotspur</li>
           <li>Arsenal - Bodo Glimt</li>
@@ -139,13 +187,10 @@
         </ul>
       </div>
     </div>
-
-    <!-- INFO FOOTER START -->
-    <div class="info-footer">
-
-    </div>
-    <!-- INFO FOOTER END -->
+    <!-- INNER TEMP END -->
   </div>
+
+  <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
 
 </html>
