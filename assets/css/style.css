@@ -6,11 +6,11 @@
 
 body {
   margin: 0;
-  background-color: gray;
   font-family: roboto, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333;
+  user-select: none;
 }
 
 h1,
@@ -295,14 +295,79 @@ img {
   display: flex;
   justify-content: space-between;
   height: 47.8px;
-  padding: 0 13.55px 0 28.69px;
+  padding: 0 28.69px 0 13.55px;
   line-height: 47.8px;
   cursor: pointer;
 }
 
+.info-list-left {
+  width: 239px;
+  font-size: 11.16px;
+  font-weight: 300;
+}
+
+.info-list-left span:nth-child(1) {
+  margin-right: 35.86px;
+}
+
+.info-list-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-list-center span {
+  flex: 1;
+  margin-right: 11.16px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ab790d;
+}
+
+.info-list-center span:nth-child(1) {
+  text-align: end;
+}
+
+.info-list-center img {
+  width: 14px;
+  height: 17px;
+  vertical-align: middle;
+}
+
+.info-list-center img:nth-child(4) {
+  margin-right: 9.7px;
+}
+
+.info-list-center b {
+  width: 25.5px;
+  font-size: 12px;
+  margin: 0 29.5px 0 27.1px;
+  text-align: center;
+}
+
+.info-list-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.right-arrow {
+  display: inline-block;
+  width: 10.34px;
+  height: 10.34px;
+  transition: 0.3s;
+}
+
+.info-list:hover .right-arrow {
+  transform: translateX(8px);
+}
+
 .info-overview-right {
   width: 352.2px;
-  padding: 31.87px 15.94px;
+  height: fit-content;
+  padding: 31.87px 15.94px 60px;
   border-radius: 11.95px;
   background-color: #fff;
 }
@@ -336,17 +401,15 @@ img {
 }
 
 .future-btn {
-  background: #e5ba5c !important;
-  color: #fff !important;
-  width: 118.84px;
+  background: #e5ba5c;
+  color: #fff;
+  width: 120px;
   height: 39.8438px;
   margin-bottom: 25.5px;
+  padding: 0 11.9531px;
   font-size: 13.5469px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 39.8438px;
   text-align: center;
-  padding: 0, 11.9531px;
-  margin-right: 11.1563px;
-  transition: background 0.3s, color 0.35s;
   cursor: pointer;
 }
